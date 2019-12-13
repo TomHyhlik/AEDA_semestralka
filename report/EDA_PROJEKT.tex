@@ -30,11 +30,38 @@
 	proud smìøuje do úst namísto do nosu. U PN k hypernazalitì dochází v dùsledku oslabení a únavy svalù spojených s bradykinezí, u HN mù¾e nastávat kolísání hypernasality
 	kvùli neschopnosti udr¾et stabilní tonus svalù, které jsou zodpovìdné za uzavírání prùchodu do nosní dutiny. \\
 	Hypernazalita tak mù¾e slou¾it jako u¾iteèný biomarker, indikující zdali vy¹etøovaný pacient trpí neurodegenerativní chorobou èi ne, popøípadì jakým typem (PN/HN). Dal by se pou¾ít napøíklad do mo¾né aplikace, odhalující brzké stádia nemoci, její záva¾nost, nebo monitorovat prùbìh a úèinky medikace. \\
-	V této práci se vìnujeme mìøení základních charakteristik hypernazality, za pomocí automatických akustických analýz i subjektivních poslechových testù. Je zkoumáno, zdali se významnì li¹í pro zdravé a pacienty trpící PN èi HN a zda dochází k výraznému rozdílu mezi obìma nemocemi, umo¾nující mezi nimi rozli¹ovat. Dále, jestli zmìøené charakteristiky reflektují záva¾nost nemoci, hodnocené pomocí míry poruchy motoriky, øeèi, bradykineze (u PN) a chorei (u HN).
+	V této práci se vìnujeme mìøení základních charakteristik hypernazality, za pomocí automatických akustických analýz i subjektivních poslechových testù. Je zkoumáno, zdali se významnì li¹í pro zdravé a pacienty trpící PN èi HN a zda dochází k výraznému rozdílu mezi obìma nemocemi, umo¾nující mezi nimi rozli¹ovat. Dále, jestli zmìøené charakteristiky reflektují záva¾nost nemoci, hodnocené pomocí míry poruchy motoriky, øeèi, bradykineze (u PN) a chorei (u HN). Zamìøeno bude také na to, zdali námi nesledované parametry (napø. vìk) významnì neovlivòují výsledky testù.
 	
 	\section{Metody}
 	% Navrhnìte vhodné testy pro zodpovìzení Va¹ich hypotéz a popi¹te metodiku
 	% analýzy.
+	
+	\subsection{Øeèová data}
+	Na provedení analýz byla poøízena øeèová data od 37 zdravých lidí (vìk. prùmìr 63.1 roku, smìr. odchylka (SD) 8.7 roku), 37 pacientù s PN (vìk. prùmìr 63.4 roku, SD 9.6 roku) a 37 s HN (vìk. prùmìr 49.0 roku, SD 12.7 roku). Míra záva¾nosti nemoci byla urèena podle standardizovaných ¹kál, uvedených v tabulce \ref{table:1}.
+	
+	\begin{table}[h!]
+		\begin{tabular}{c|l|c|c|l|c|}
+			\cline{2-6}
+			& \multicolumn{2}{|c|}{\textbf{PD}} & & \multicolumn{2}{|c|}{\textbf{HD}} \\ \cline{2-3} \cline{5-6}
+			 & \textbf{standardizovaná ¹kála} & \textbf{rozsah} & & \textbf{standardizovaná ¹kála} & \textbf{rozsah} \\ \cline{2-3} \cline{5-6}
+			porucha motoriky & UPDRS III & 0 - 108 & & UHDRS & 0 - 124 \\ \cline{2-3} \cline{5-6}
+			porucha øeèi & UPDRS III speech item 18 & 0 - 4 & & UHDRS speech item & 0 - 4 \\ \cline{2-3} \cline{5-6}
+			bradykineze & UPDRS III & 0 - 24 & & - & - \\ \cline{2-3} \cline{5-6}
+			chorei &- & - & & UHDRS & 0 -28 \\
+			\cline{2-6}
+		\end{tabular}
+	\caption{Hodnocení záva¾nosti nemoci podle standardizovaných ¹kál. Platí, ¾e èím vìt¹í hodnota tím je porucha záva¾nìj¹í.}
+	\label{table:1}
+	\end{table}
+	
+	\noindent
+	V¹ichni úèastníci byli po¾ádáni o prodlou¾enou fonaci hlásky /i/ a krátký monolog na zvolené téma.
+	
+	\subsection{Mìøení dat}
+	Pro automatické zhodnocení hypernazality byla pou¾ita prodlou¾ená fonace na kterou byl aplikován algoritmus analýzy tøetino-oktávového spektra \cite{2}. Následnì byly vypoèítány 3 akustické pøíznaky: míra hypernazality (Efn mean [dB]), kolísavost hypernazality (Efn SD [dB]) a nárùst	hypernazality v èase (Efn trend [dB/s]) kvùli postupné únavì vokalického traktu. \\
+	Zároveò byla míra hypernazality vyhodnocena subjektivnì z øeèových monologù 10ti nezávislými hodnotiteli podle ¹kály the Great Ormond Street Speech Assessment '98 (GOS.SP.ASS.'98) \cite{3}. ©kála má rozsah 0 - 3 kde 0 znaèí normální nazalitu a 3 tì¾kou nazalitu.
+	
+	\subsection{Statistické testy}
 	
 	\section{Výsledky}
 	% Proveïte analýzy pomocí vybraných testù a výsledky øádnì reportujte.
@@ -46,6 +73,12 @@
 	\begin{thebibliography}{5}
 		\bibitem{1}
 		Theodoros DG, Murdoch BE, Thompson EC. Hypernasality in Parkinson Disease: A Perceptual and	Physiological. Journal of Medical Speech-Language Pathology, 1995; 3:73-84.
+		
+		\bibitem{2}
+		Kataoka R, Warren DW, Zajac DJ, Mayo R, Lutz RW. The relationship between spectral characteristics and percieved hypernasality in children. J Acoust Soc Am 2001; 109:2181-2189.
+		
+		\bibitem{3}
+		Sell D, Harding A, Grunwell P. GOS.SP.ASS.'98: an assessment for speech disorders associated with cleft	palate and/or velopharyngeal dysfunction (revised). International Journal of Language \& Communication Disorders 1999; 34:17-33.
 
 	\end{thebibliography}
 \end{document}
