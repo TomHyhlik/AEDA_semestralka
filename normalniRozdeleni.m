@@ -1,8 +1,9 @@
 function report = normalniRozdeleni(variable)
+    
+    alpha = 0.05;
+    [h,p]=swtest(variable, alpha); 
 
-    [h,p]=kstest((variable-mean(variable))/std(variable)) 
-
-    if p > 0.55
+    if h == 0
         report = "ANO"
 %         fprintf("ANO\n")
     else
