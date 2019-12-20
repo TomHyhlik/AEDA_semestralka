@@ -31,7 +31,7 @@ EFNmean = loadedData.EFNMean_dB_;
 EFNsd = loadedData.EFNSD_dB_;
 EFNtrend = loadedData.EFNTrend_dB_s_;
 
-examinedVariable = EFNmean; % here you choose the variable to be analyzed
+examinedVariable = EFNtrend; % here you choose the variable to be analyzed
 
 % MANOVA
 [p, table, stats, terms] = anovan(examinedVariable, {disease, gender}, 'varnames', {'disease type', 'gender'}, 'model', 'interaction');
