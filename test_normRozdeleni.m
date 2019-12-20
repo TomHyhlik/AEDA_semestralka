@@ -1,5 +1,5 @@
 % This script tests if the data are drawn from a normal distribution
-% and the variances are homogenous across the different DVS -> necessary
+% and the variances are homogenous across the different DVs -> necessary
 % for ANOVA tests
 clear all
 clc
