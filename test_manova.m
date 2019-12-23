@@ -25,19 +25,24 @@ disease(1 : 37) = 1; % PD
 disease(37+1 : 2*37) = 2; % HD
 disease(2*37 + 1 : 3*37) = 3; % HC
 
+%% subjective rate score
+rates = [loadedData.Rater1 loadedData.Rater2 loadedData.Rater3 loadedData.Rater4 loadedData.Rater5 loadedData.Rater6 ...
+    loadedData.Rater7 loadedData.Rater8 loadedData.Rater9 loadedData.Rater10];
+meanRates = mean(rates, 2);
+
 %% Perform MANOVA and post-hoc differences
 % the examined variables
 EFNmean = loadedData.EFNMean_dB_;
 EFNsd = loadedData.EFNSD_dB_;
 EFNtrend = loadedData.EFNTrend_dB_s_;
 
-examinedVariable = EFNtrend; % here you choose the variable to be analyzed
+examinedVariable = meanRates; % here you choose the variable to be analyzed
 
 % MANOVA
 [p, table, stats, terms] = anovan(examinedVariable, {disease, gender}, 'varnames', {'disease type', 'gender'}, 'model', 'interaction');
 
 % post-hoc differences using Bonferroni method
-[c, m, h, nms] = multcompare(stats, 'dimension', 1, 'ctype', 'bonferroni', 'alpha',0.05);
+[c, m, h, nms] = multcompare(stats, 'dimension', 1, 'ctype', 'bonferroni', 'alpha',0.001);
 
 
         
