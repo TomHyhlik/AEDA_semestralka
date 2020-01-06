@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdfcslatex 2017.6.17)  26 DEC 2019 18:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdfcslatex 2017.6.17)  4 JAN 2020 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1064,7 +1064,7 @@ Package epstopdf Info: Source file: <boxplot.eps>
 df boxplot.eps>
 (epstopdf)             \includegraphics on input line 93.
 Package epstopdf Info: Output file is already uptodate.
-<boxplot-eps-converted-to.pdf, id=50, pagebox=cropbox, 516.93124pt x 316.18124p
+<boxplot-eps-converted-to.pdf, id=49, pagebox=cropbox, 516.93124pt x 316.18124p
 t>
 File: boxplot-eps-converted-to.pdf Graphic file (type pdf)
 <use boxplot-eps-converted-to.pdf>
@@ -1108,11 +1108,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
 Here is how much of TeX's memory you used:
  7822 strings out of 494832
  109931 string characters out of 6179747
- 204672 words of memory out of 5000000
+ 205672 words of memory out of 5000000
  11071 multiletter control sequences out of 15000+600000
  28788 words of font info for 66 fonts, out of 8000000 for 9000
  24 hyphenation exceptions out of 8191
- 34i,17n,31p,711b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,17n,31p,711b,333s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2017/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}{c:/te
 xlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2017/texmf-dist/f
 onts/type1/public/kpfonts/jkpbn8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/p
@@ -1120,7 +1120,7 @@ ublic/kpfonts/jkpmi.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/kpfonts/
 jkpmit8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb
 ><c:/texlive/2017/texmf-dist/fonts/type1/public/kpfonts/jkpmne.pfb><c:/texlive/
 2017/texmf-dist/fonts/type1/public/kpfonts/jkpsy.pfb>
-Output written on EDA_PROJEKT.pdf (4 pages, 100640 bytes).
+Output written on EDA_PROJEKT.pdf (4 pages, 100829 bytes).
 PDF statistics:
  108 PDF objects out of 1000 (max. 8388607)
  93 compressed objects within 1 object stream
