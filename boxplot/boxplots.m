@@ -21,8 +21,9 @@ range_PD = 1 : N;
 range_HD = N+1 : 2*N;
 range_HC = 2*N+1 : 3*N;
 
-%% boxplots
+% boxplots
 figure(1)
+set(gca, 'Color', 'none');
 subplot(131)
 boxplot([EFNmean(range_HC), EFNmean(range_HD), EFNmean(range_PD)], 'Labels', {'HC', 'HN', 'PN'})
 ylim([-50 -20])
@@ -60,3 +61,5 @@ line([3 3], [2.25 2.35], 'Color', 'black', 'LineWidth', 1)
 text(2, 2.35 + 0.025, '**', 'HorizontalAlignment', 'center')
 title('\bf mean rates')
 ylabel('mean score [-]')
+%%
+export_fig boxplot.eps -transparent
